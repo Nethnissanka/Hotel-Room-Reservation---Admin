@@ -28,16 +28,16 @@ function Room({ room, fromDate, toDate }) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const handleBookNow = () => {
-    const user = JSON.parse(localStorage.getItem("currentUser"));
-    if (user) {
-      navigate(`/book/${room._id}/${fromDate}/${toDate}`);
-    } else {
-      navigate("/register");
-    }
-  };
+  // const handleBookNow = () => {
+  //   const user = JSON.parse(localStorage.getItem("currentUser"));
+  //   if (user) {
+  //     navigate(`/book/${room._id}/${fromDate}/${toDate}`);
+  //   } else {
+  //     navigate("/register");
+  //   }
+  // };
 
 return (
   <div className="bg-gray-100 rounded row bs">
@@ -66,12 +66,12 @@ return (
         </div>
       </b>
       <div style={{ float: "right" }}>
-        <button
+        {/* <button
           className="px-4 py-2 my-2 font-semibold text-white transition duration-300 rounded-lg font-custom bg-accent hover:bg-accent-hover focus:outline-none focus:ring-2 focus:ring-yellow-600"
           onClick={handleBookNow}
         >
           Book Now
-        </button>
+        </button> */}
         <button
           className="px-4 py-2 font-semibold text-white transition duration-300 rounded-lg font-custom ml-7 bg-accent hover:bg-accent-hover focus:outline-none focus:ring-2 focus:ring-yellow-600"
           onClick={handleShow}
