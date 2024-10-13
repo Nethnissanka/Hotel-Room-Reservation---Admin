@@ -153,7 +153,7 @@ function Homescreen() {
           {loading ? (
             <Loader />
           ) : (
-            console.log(e); // Add this line before the .map() function
+            // console.log(e); // Add this line before the .map() function
 
             rooms.map((room) => {
               return (
